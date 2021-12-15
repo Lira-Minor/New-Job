@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*	* {
+		padding: 0;
+		margin: 0;
+	}               */
+
+body {
+	background-color: #EAB586;
+	color: #042B48;
+
+/*	font-size: 20px;
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;*/
+
+	font: normal 20px 'Roboto', sans-serif;
+}
+
+a {
+	color: #0C0C0C;
+	text-decoration: none;	
+}
+
+a:hover {
+	text-decoration: underline; /*Псевдоселектор. Для обработки события при наводке мыши. 
+	                              Например, за состояние говорит hover (наведение)*/	
+}
+
+a:active {
+	color: #8D1C1A; /*При удержании будет меняться цвет*/
+}
+
+/*a:visited {
+	color: maroon;
+}*/
+
+.Logo {
+	width: 300px;
+	border-radius: 30px;
+}
+
+.info {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+	.info {
+		text-align: center;
+		display: block;
+	}	
+}
+
+.info-text {
+	margin: 60px;
+}
+
+.info-text h4 {
+	margin-bottom: 15px;
+}
+
+.info p {
+	color: #B2531B;
+	margin: 0;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: capitalize;
+/*	letter-spacing: 10px;*/	
+}
+
+/*Box Model*/
+
+.container {
+	max-width: 2000px;
+	margin: auto;
+	padding-top: 25px;	
+}
+
+/*.social {
+
+	background: maroon;
+	color: #FF8533;
+	
+	font-style: normal;
+	
+	padding: 25px;
+	margin: 100px;
+
+	border: 10px solid #FF852C;
+	border-radius: 15px;
+	border-top-color: #6495ed;
+	/*border-style: dotted;
+	
+} */
+
+/*.social h4 {
+
+	color: #FF5533;
+	font: 'Roboro';
+	font-style: italic;
+		
+} */
+
+/*.box-model > div {
+
+	float: left;
+	background: #000;
+	height: 300px;
+	border: 3px solid yellow;
+	width: 25%;
+	box-sizing: border-box; /*border & margin будут находиться на одном уровне
+	
+} */
+
+.bg-good {
+	background: #B2531B;
+}
+
+.bg-best {
+	background: #FE904A;
+}
+
+.bg-cool {
+	background: #EAA05C;
+}
+
+.card {
+	padding: 20px 25px;
+	margin-bottom: 20px;
+	border-radius: 15px;
+}
+
+.list {
+	padding: 0 0;
+	list-style: none;	
+}
+
+.list li {
+	color: #FEAA1B;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #FEAA1B;
+	padding-bottom: 5px;
+}
+
+.table {
+	width: 100%;
+	
+}
+
+.table td {
+	padding-bottom: 10px;
+}
+
+.tab1 td {
+	width: 40%;
+}
+
+.table td:nth-child(2) {
+	color: #B2531B;
+}
+
+.table td:nth-child(3) {
+	color: #B2621B;
+}
+
+/*.table tr:nth-child(odd) {
+	background: maroon;
+}*/
+
+.link-bing {
+	list-style: none;
+	padding: 0;
+}
+
+.link-bing li {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #2A2931;
+}
+
+/*.contact {
+	padding: 20px 25px;
+	margin-bottom: 20px;
+}*/
+
+.contact h2 {
+	text-align: center;
+}
+
+.form-mes label {
+	display: block;
+	font-size: 20px;
+	color: #A75B13;
+}
+
+.form-mes input,
+.form-mes textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #A75B13;
+	color: #0C0C0C;
+	padding: 10px 0 5px;
+	outline: none;
+	font-family: inherit;
+}
+
+.row {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.row > .form-mes {
+	width: 50%;
+}
+
+.row > .form-mes:first-child {
+	margin-right: 20px;
+}
+
+.viz {
+	background: black;
+	color: #A75C19;
+	padding: 15px 15px;
+	border: none;
+	font-family: inherit;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+.viz:hover {
+	opacity: 0.7;
+}
+
+.position {
+	position: relative;
+	border: 3px solid #A75B13;
+	margin-top: 10px;
+	padding: 15px;
+	height: 200px;
+}
+
+.posi label {
+	width: 100%;
+	color: #A75B13;
+	font-size: 25px;
+	display: flex;
+}
+
+.posi textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #A75B13;
+	color: #0C0C0C;
+	padding: 10px 0 5px;
+	outline: none;
+	font-family: inherit;
+}
+
+.sub {
+	background: black;
+	color: #A75C19;
+	padding: 15px 15px;
+	border: none;
+	font-family: inherit;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+.sub:hover {
+	opacity: 0.7;
+}
+
+.box {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	background: chocolate;
+	border-radius: 50%;
+}
